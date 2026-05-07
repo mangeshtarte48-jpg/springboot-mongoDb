@@ -26,7 +26,7 @@ public class PersonController {
 
     @GetMapping("/{search}")
     public ResponseEntity<List<Person>> getPersonByName(@RequestParam String personName){
-
+     // mangesh
     List<Person> getPerson= personService.getPersonByName(personName);
     return new ResponseEntity<>(getPerson,HttpStatus.OK);
     }
