@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/mangeshtarte48-jpg/springboot-mongoDb.git'
-            }
-        }
-
         stage('Build Maven Project') {
             steps {
                 sh 'mvn clean package'
