@@ -11,7 +11,7 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t springboot-mongoDb:1.0 .'
+                sh 'docker build -t springboot-mongodb:1.0 .'
             }
         }
     }
